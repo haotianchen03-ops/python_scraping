@@ -1,9 +1,9 @@
-import requests  # 爬取
-import logging  # 输出信息,用于记录日志
+import requests
+import logging
 import re
 import pymongo
 from pyquery import PyQuery as pq
-from urllib.parse import urljoin  # 网站拼接
+from urllib.parse import urljoin
 import multiprocessing
 import certifi
 from requests.auth import HTTPBasicAuth
