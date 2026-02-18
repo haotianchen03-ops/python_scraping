@@ -29,10 +29,6 @@ def scrape_api(url):  # 专门处理json接口
 
 
 Index_URL = 'https://spa1.scrape.center/api/movie/?limit={limit}&offset={offset}'
-'''
-用Index_URL.format(limit=10, offset=10)改变{}内容
-'''
-
 
 def scrape_index(page):  # 用于构造列表页 API 请求地址，并获取对应页的数据
     index_url = Index_URL.format(limit=LIMIT, offset=LIMIT*(page-1))
